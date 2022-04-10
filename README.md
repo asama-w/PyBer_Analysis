@@ -23,12 +23,36 @@ The resources and tools for this analysis are shown as below;
 
 ## 2) Analysis Results
 ### 2.1) Starter DataFrame
+The overall PyBer data frame `pyber_data_df` is created by combing the city and ride data frames together. The following figure shows the overview of this data frame on which the analysis will be performed.
 
 <img src= https://github.com/asama-w/PyBer_Analysis/blob/main/Additional%20Images/PyBer_data_df.png width="60%" height="60%">
 
 ### 2.2) Summary DataFrame of Ride-Sharing Data by City Types
+There are 3 types of cities in this dataset: **Rural, Suburban, and Urban**.
 
-<img src= https://github.com/asama-w/PyBer_Analysis/blob/main/Additional%20Images/PyBer_summary_df.png width="70%" height="70%">
+As this analysis focus on the impact of different city types on the ride-sharing fares, the following statistical analysis per each city are performed on the data in `pyber_data_df` data frame, then put into a new data frame called `pyber_summary_df` to display the data summary.
++ Total Rides
++ Total Drivers
++ Total Fares
++ Average Fare per Ride
++ Average Fare per Driver
+
+Examples of the code:
+```python
+# Find average total fare per ride for each city type
+total_rides_by_type = pyber_data_df.groupby(["type"]).count()["ride_id"]
+total_fares_by_type = pyber_data_df.groupby(["type"]).sum()["fare"]
+avg_fare_per_ride = total_fares_by_type / total_rides_by_type
+```
+
+The summary data frame based on the city types, `pyber_summary_df`is present as the below figure. 
+
+<img src= https://github.com/asama-w/PyBer_Analysis/blob/main/Additional%20Images/PyBer_summary_df.png width="80%" height="80%">
+
+From the summary data frame, there are two visible trends, which are are inversely proportional to each other:
++ **The trend of the total number of rides, numbers of drivers, and total collected fares**: _Number: Urban > Suburban > Rural_ <br /> The number are highest in Urban city type, follows by Suburban, and are lowest in Rural city type. 
++ **The trend of the average fare per ride and the average fare per driver**: _Price: Rural > Suburban > Urban_ <br /> where the average fares are cheapest in the Urban area and most expensive in the Rural area.
+
 
 ### 2.3) Fare Per Week by City Types
 
