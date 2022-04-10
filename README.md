@@ -49,7 +49,7 @@ The summary data frame based on the city types, `pyber_summary_df`is present as 
 
 <img src= https://github.com/asama-w/PyBer_Analysis/blob/main/Additional%20Images/PyBer_summary_df.png width="80%" height="80%">
 
-From the summary data frame, there are two visible trends, which are are inversely proportional to each other:
+From the summary data frame, there are two visible trends, which are inversely proportional to each other:
 + **The trend of the total number of rides, numbers of drivers, and total collected fares**: _Number: Urban > Suburban > Rural_ <br /> The number are highest in Urban city type, follows by Suburban, and are lowest in Rural city type. 
 + **The trend of the average fare per ride and the average fare per driver**: _Price: Rural > Suburban > Urban_ <br /> where the average fares are cheapest in the Urban area and most expensive in the Rural area.
 
