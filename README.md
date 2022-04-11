@@ -50,18 +50,58 @@ The summary data frame based on the city types, `pyber_summary_df`is present as 
 <img src= https://github.com/asama-w/PyBer_Analysis/blob/main/Additional%20Images/PyBer_summary_df.png width="80%" height="80%">
 
 From the summary data frame, there are two visible trends, which are inversely proportional to each other:
-+ **The trend of the total number of rides, numbers of drivers, and total collected fares**: _Number: Urban > Suburban > Rural_ <br /> The number are highest in Urban city type, follows by Suburban, and are lowest in Rural city type. 
-+ **The trend of the average fare per ride and the average fare per driver**: _Price: Rural > Suburban > Urban_ <br /> where the average fares are cheapest in the Urban area and most expensive in the Rural area.
++ **The trend of the total number of rides, numbers of drivers, and total collected fares**:<br /> _Number of shares: Urban > Suburban > Rural_ <br /> The number are highest in Urban city type, follows by Suburban, and are lowest in Rural city type. 
++ **The trend of the average fare per ride and the average fare per driver**:<br /> _Price per share: Rural > Suburban > Urban_ <br /> The average fares per ride is the cheapest in Urban areas, and average fare per driver is the lowest in the Urban area. While average fares per ride is the most expensive in the Rural area, the average fare per driver is the highest in the Rural areas.
+
+> Note that the number of drivers in Urban cities is much higher than their number of rides, thus the average fare per driver is low ($16. 57). On the other hands, there are lesser drivers in Suburban and Rural cities than the number of rides, thus their drivers makes larger amount per trip. Rural cities' drivers make $55.49 per trip, which is around 3 times higher than Urban cities's drivers.
+
+This can be the results from the population differences in each area, or the life-style of the residences. The urban city area is highly populated and usually radiates a busy life-style where everything is time-limited. People may need to commute from here and there in a hurry, resulting in the higher number of rides, attracting more drivers as there are more ride's demands, creating the high total amount of collected fares, thus, the average fare per ride tends to be lower due to the larger numbers of shares, however, the average fare by driver is also lowest due to the higher number of drivers.
+
+On the contrary, when the distance is getting further away from the urban city area, the number of rides decreases and so does the drivers. This may result from the lesser populations, or there are fewer reasons for people to travelling out of the city more than coming in to the city, thus the demand in the suburban area and rural area decrease respectively. With the lesser numbers to share the fare, the average fare per ride increase, but so does the average share per driver which is higher, meaning that the drivers in the rural cities make more money per trip than the drivers in suburban and urban cities.
 
 
 ### 2.3) Fare Per Week by City Types
+To uncover the trends of how the differ in timeline (by week) affect the total fare of each city type, the new data frame that summarize the weekly total fare of each city types is created. The duration of the dataset which will be analyzed is from January 1st, 2019 through April 28th, 2019, or approximately 4 months. The overview of this data frame is shown in the following figure.
 
 #### Total Weekly Fare by City Types (DataFrame)
+The data frame contains the total fare per week of each city type.
+
 <img src= https://github.com/asama-w/PyBer_Analysis/blob/main/Additional%20Images/Weekly_fare_summary_by_type.png width="25%" height="25%">
 
 #### Total Weekly Fare by City Types (Multple-line Chart)
+The multiple-line plot is used to visualize the trends of the total fare per week for Urban, Suburban, and Rural, from this data frame.
 
 <img src= https://github.com/asama-w/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png width="100%" height="100%">
 
+The trends from the total-weekly-fare plot correlate with the data in the ride-sharing-summary-by-type data frame `pyber_summary`.
+
+Readings from the plot;
++ The Urban and Suburban type show a positive trend despite the fluctuations, still on the rise by the 4th week of April when compare to the beginning of January.
++ The Urban area's fare remains over $2000 USD range, throughout the period despite some up-and-down in March, which is the highest total fare amount among the three city types, approximately 4 times higher than the total fare of the Rural type.
++ The Suburban stays in-between the Urban and Rural trends, in the range $750 and $1500 USD, with a sharp rise from the 2nd week to 4th week of April.
++ The Rural type, however, remains relatively low within $500 USD range throughout the four months.
++ There is a spike increase for every city type in the 4th week of February follows by a dip at the beginning of March. There might have been some situations that increase the demands in ride-sharing in the 4th week of February.
++ From the 2nd to 4th week of April, there is a sharp rise for Suburban cities, while the other two fares show slight decline.
+
+
 ## 3) Analysis Summary
-(Three business recommendations addressing any disparities among the city types)
+The following table shows the key points summary of this ride-share data analysis.
+
+|Urban|Suburban|Rural|
+|:-----:|:-----:|:-----:|
+|Highest generated total fares <br /> $39,854,28|Medium generated total fares <br /> $19,356.33| Lowest generated total fares <br /> $4,327.93|
+|Number of drivers > Number of rides |Number of rides > Number of drivers|Number of rides > Number of drivers|
+|Lowest avg driver's earning per trip <br /> $16.57|In-between <br /> $39.50|Highest driver's earning per trip <br /> $55.49|
+|Cheapest avg ride fare per trip <br /> $24.53|Medium-high avg ride fare per trip <br /> $30.97| Most expensive avg ride fare per trip<br /> $34.62|
+
++ From the data frames and multiple-line plot, ride-sharing is not a high demand services in the rural city type. However, this results in a highest earning of drivers among the three city types (rural's drivers earning-per-trip is approximately 3 times higher than Urban cities' drivers), despite having a relatively low ride numbers.
+
++ The different demands in ride-sharing services may due to the population factors, the geographic factors, the economical factors, the needs of ride-sharing, or the price per ride that is relatively high in rural cities, and relatively low in urban cities. To attract more customers to use ride-sharing services in the rural and subrural area, the company may need to do more research on the habituals of the residences in the cities, the approachability of the app and services, and find the touch point of the fare that is competitively with the others transportation options available in the areas. The company can promote the app with the aim of top-tier but affordable riding experience in-mind, so that the riders will remember the brand PyBer, and think of it first when there is the need to commute. 
+
++ To increase the total fares in Suburban cities, where the demand trends seems to be rising, the company can do a seasonal promotional campaign, such as additional discount if the pick-up locations and trip-destinations is within the cities, promoting the ride-sharing services using friend-referring discount to attract more customers to use their ride-share app and keep the ride-sharing trend goings.
+
++ As the Urban's driver earn comparably low, one solution to make up for the low average fare per drivers is to gain more riders such that there are more ride trips than the driver to increase the average earning, and encourage the drivers to keep working with PyBer. In the urban cities where the ride-sharing is usually in high demand, the company can do a surprise campaign to thanks the frequent riders, giving out discounts, or collecting points which can be converted to the ride fare money. 
+
+
+
+
