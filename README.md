@@ -47,7 +47,7 @@ avg_fare_per_ride = total_fares_by_type / total_rides_by_type
 
 The summary data frame based on the city types, `pyber_summary_df`is present as the below figure. 
 
-<img src= https://github.com/asama-w/PyBer_Analysis/blob/main/Additional%20Images/PyBer_summary_df.png width="80%" height="80%">
+<img src= https://github.com/asama-w/PyBer_Analysis/blob/main/Additional%20Images/PyBer_summary_df.png width="90%" height="90%">
 
 From the summary data frame, there are two visible trends, which are inversely proportional to each other:
 + **The trend of the total number of rides, numbers of drivers, and total collected fares**:<br /> **_Number of shares: Urban > Suburban > Rural_** <br /> The number are highest in Urban city type, follows by Suburban, and are lowest in Rural city type. 
