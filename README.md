@@ -94,7 +94,7 @@ The following table shows the key points summary of this ride-share data analysi
 |Lowest avg driver's earning per trip <br /> $16.57|In-between <br /> $39.50|Highest driver's earning per trip <br /> $55.49|
 |Cheapest avg ride fare per trip <br /> $24.53|Medium-high avg ride fare per trip <br /> $30.97| Most expensive avg ride fare per trip<br /> $34.62|
 
-+ From the data frames and multiple-line plot, ride-sharing is not a high demand services in the rural city type. However, this results in a highest earning of drivers among the three city types despite having a relatively low ride numbers.
++ From the data frames and multiple-line plot, ride-sharing is not a high demand services in the rural city type. However, this results in a highest earning per trip of drivers among the three city types despite having a relatively low ride numbers.
 
 + The different demands in ride-sharing services may due to the population factors, the geographic factors, the economical factors, the needs of ride-sharing, or the price per ride that is relatively high in rural cities, and relatively low in urban cities. To attract more customers to use ride-sharing services in the rural and subrural area, the company may need to do more research on the habituals of the residences in the cities, the approachability of the app and services, and find the touch point of the fare that is competitively with the others transportation options available in the areas. The company can promote the app with the aim of top-tier but affordable riding experience in-mind, so that the riders will remember the brand PyBer, and think of it first when there is the need to commute. 
 
